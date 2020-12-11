@@ -1,0 +1,21 @@
+{
+  "name": "three.js-jazz",
+  "version": "0.1",
+  "description": "yoga hot flame",
+  "author": "Mikal Callahan",
+  "license": "do-as-you-will",
+  "scripts": {
+    "dev": "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p src/client -w\" \"nodemon ./dist/server/server.js\"",
+    "test": "echo \"Try to test\" && exit 1"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.10",
+    "express": "^4.17.1",
+    "three": "^0.123.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
